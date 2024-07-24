@@ -2,9 +2,9 @@ body {
   margin: 10px;
 }
 
-*, *::before, *::after {
+/* *, *::before, *::after {
   box-sizing: border-box;
-}
+} */
 
 /* element id */
 
@@ -141,7 +141,7 @@ p {
   border-top: 3px solid orange;
 } */
 
-.boxes {
+/* .boxes {
   border: 3px solid lightgrey;
 }
 
@@ -157,11 +157,145 @@ p {
 .box-two {
   background: tomato;
   position: relative;
-  right: 4rem;
-  top: 2rem;
+  left: 4rem;
   bottom: 4rem;
+  z-index: 1;
 }
 
 .box-three {
   background: dodgerblue;
+} */
+
+/* For flex tutorial */
+/* .container {
+  border: 3px solid lightgray;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  height: 90vh;
+} */
+
+/* .box {
+  flex-basis: 5rem;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex: 1;
+  width: 5rem;
+  height: 5rem;
+  background: gold;
+  margin: 1rem;
+} */
+
+/* .box-one { */
+   /* align-self: flex-start; */
+   /* flex-grow: 2;
+} */
+
+/* For Grid tutorial */
+
+/* .container {
+  display: grid; */
+  /* 3 x 2 */
+  /* grid-template-rows: repeat(3, 100px);
+  grid-template-columns: repeat(2, 100px); */
+  /* grid-template: 100px auto 100px / 30fr 70fr;  */
+  /* fr-fraction */
+  /* grid-template-areas: 
+    "header header" 
+    "sidebar main" 
+    ".       footer"; */
+  /* row-gap: 10px;
+  column-gap: 10px; */
+  /* gap: 10px;
+  border: 3px solid lightgray;
+  height: 100vh;
+} */
+
+/* .box {
+  background: gold;
+} */
+
+/* .box-one {
+  grid-column: 1/span 2; */
+  /* grid-row: 2 /span 2; */
+  /* grid-area: header;
+}
+
+.box-four {
+  grid-area: footer;
+} */
+
+/* Hiding an element */
+/* .first { */
+  /* display: none; */
+  /* visibility: hidden;
+} */
+
+/* Media query (Responsive) */
+/* .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  background: gold;
+  padding: 1rem;
+}
+
+.box:nth-of-type(2) {
+  background: dodgerblue;
+} */
+
+/* @media screen and (min-width: 600px){
+  .container {
+    flex-direction: row;
+  }
+} */
+
+/* @media screen and (min-width: 900px){
+  .container {
+    flex-direction: row;
+  }
+  .box {
+    background: white;
+  }
+} */
+
+/* @media print {
+  body {
+    font-size: 12pt;
+  }
+
+  .box {
+    padding: 0.5cm;
+  }
+} */
+
+nav {
+  background: black;
+  padding: 5px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: center;
+  padding-left: 0;
+}
+
+nav li {
+  color: white;
+  margin: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  nav ul{
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 10px;
+  }
 }
