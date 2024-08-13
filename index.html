@@ -8,27 +8,42 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <!-- Form Exercise -->
+
+    <form class="form-signin" method="POST">
+      <h1>Please sign in</h1>
+      <div class="form-group">
+        <input
+          class="form-control"
+          type="text"
+          placeholder="Email address"
+          minlength="5"
+          maxlength="255"
+          autofocus
+        />
+      </div>
+      <div class="form-group">
+        <input
+          class="form-control"
+          type="password"
+          placeholder="Password"
+          maxlength="255"
+        />
+      </div>
+      <div class="form-group">
+        <input type="checkbox" id="remember" />
+        <label for="remember">Remember me</label>
+      </div>
+      <button class="btn">Sign in</button>
+      <p>Copyright &copy; 2020</p>
+    </form>
+
     <!-- Image Exercise -->
 
-    <picture>
-      <source
-        media="(max-width: 917px)"
-        srcset="images/images/banner_dp2wir_c_scale,w_320.jpg"
-      />
-      <source
-        media="(min-width: 918px)"
-        srcset="images/images/banner_dp2wir_c_scale,w_918.jpg"
-      />
-      <source
-        media="(min-width: 1381px)"
-        srcset="images/images/banner_dp2wir_c_scale,w_1381.jpg"
-      />
-      <source
-        media="(min-width: 1382px)"
-        srcset="images/images/banner_dp2wir_c_scale,w_1440.jpg"
-      />
-      <img src="images/banner.jpg" alt="" />
-    </picture>
+    <!-- <section class="hero">
+      <h1>HUBBLE SPACE TELESCOPE</h1>
+      <p class="tagline">30 Years of Discovery</p>
+    </section> -->
 
     <!-- Typography exercise -->
 
